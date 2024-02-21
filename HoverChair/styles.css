@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetting some default browser styles */
+body,
+h1,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Styling the hero section */
+.hero-section {
+  background-color: #f5f5f5;
+  /* Neutral background color */
+  text-align: center;
+  /* Center-align text content */
+  padding: 60px 20px;
+  /* Padding for inner content */
+}
+
+/* Styling the hero content */
+.hero-content {
+  max-width: 600px;
+  /* Limiting width for better readability */
+  margin: 0 auto;
+  /* Center the content horizontally */
+}
+
+/* Styling the main heading */
+.main-heading {
+  color: #333;
+  /* Dark text color for better contrast */
+  font-size: 36px;
+  /* Larger font size for emphasis */
+  margin-bottom: 10px;
+  /* Spacing below the main heading */
+}
+
+/* Styling the subheading */
+.sub-heading {
+  color: #666;
+  /* Slightly darker text color */
+  font-size: 24px;
+  /* Larger font size for emphasis */
+  margin-bottom: 20px;
+  /* Spacing below the subheading */
+}
+
+/* Styling the description paragraph */
+.description {
+  color: #777;
+  /* Slightly darker text color */
+  font-size: 16px;
+  /* Standard font size */
+  margin-bottom: 30px;
+  /* Spacing below the description */
+}
+
+/* Styling the call to action button */
+.cta-button {
+  display: inline-block;
+  /* Make the button inline */
+  background-color: #3498db;
+  /* Button background color */
+  color: #fff;
+  /* White text color for better visibility */
+  padding: 10px 20px;
+  /* Padding inside the button */
+  text-decoration: none;
+  /* Remove default link underline */
+  border-radius: 5px;
+  /* Add slight border radius for a softer look */
+  font-size: 16px;
+  /* Standard font size */
+  transition: background-color 0.3s ease;
+  /* Smooth transition on hover */
+}
+
+/* Styling the call to action button on hover */
+.cta-button:hover {
+  background-color: #2575a2;
+  /* Darker background color on hover */
+}
+
+/* Styling the hero image */
+.hero-image {
+    border-radius: 30%; /* Make the image rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    margin-bottom: 20px; /* Spacing below the image */
+    width: 100px;
+    mix-blend-mode: hard-light;
+}
