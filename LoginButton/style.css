@@ -1,24 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Resetting some default browser styles */
-body, h1, h2, p, button {
+body,
+h1,
+h2,
+p,
+button {
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Ensuring the button text is centered horizontally and vertically */
 .container {
-    display: flex; /* Use flexbox for easy centering */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    height: 100vh; /* Full viewport height for visual separation */
+    display: flex;
+    /* Use flexbox for easy centering */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    height: 100vh;
+    /* Full viewport height for visual separation */
 }
 
 /* Styling the rounded button */
 .rounded-button {
-    background-color: #1da1f2; /* Twitter blue color */
-    color: #fff; /* White text color */
-    padding: 10px 20px; /* Padding inside the button */
-    border: none; /* Remove default button border */
-    border-radius: 20px; /* Create rounded corners */
-    font-size: 16px; /* Set the font size */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #1da1f2;
+    /* Twitter blue color */
+    color: #fff;
+    /* White text color */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    border: none;
+    /* Remove default button border */
+    border-radius: 20px;
+    /* Create rounded corners */
+    font-size: 16px;
+    /* Set the font size */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
 }
