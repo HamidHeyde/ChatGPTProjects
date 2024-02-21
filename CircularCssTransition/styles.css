@@ -1,0 +1,78 @@
+/* Sample */
+:root {
+  --component-top: -100px;
+  --component-left: -100px;
+  --path-radius: 200px;
+  --circle-radius: 16px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  top: var(--component-top);
+  left: var(--component-left);
+  width: var(--path-radius);
+  height: var(--path-radius);
+  /* border: 1px red solid; */
+  position: relative;
+}
+
+.wrapper .circular-path {
+  width: var(--path-radius);
+  height: var(--path-radius);
+  /* border: 1px orange solid; */
+  border-radius: 50%;
+  position: relative;
+}
+
+.wrapper .moving-circle {
+  top: 92px;
+  left: 92px;
+  width: var(--circle-radius);
+  height: var(--circle-radius);
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50%, orange, transparent);
+  position: absolute;
+  z-index: 10;
+}
+
+@keyframes moving-circle {
+  0% {
+    transform: rotate(0deg) translate(100px, 0px) rotate(-0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) translate(100px, 0px) rotate(-360deg);
+    opacity: 1;
+  }
+}
+
+.delay1 {
+  animation: moving-circle 30s linear infinite;
+  animation-delay: 0s;
+  opacity: 0;
+}
+
+.delay2 {
+  animation: moving-circle 30s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.delay3 {
+  animation: moving-circle 30s linear infinite;
+  animation-delay: 2s;
+  opacity: 0;
+}
